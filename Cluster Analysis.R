@@ -18,7 +18,7 @@ library(ggplot2) # for plots
 #QUESTIONS:
 #  1. Import Customer data in R.
 # Load the data
-CustomerData<-read.csv(file.choose(), header = TRUE)
+CustomerData<-read.csv("Customer_data.csv", header = TRUE)
 head(CustomerData) # View first 6 rows
 dim(CustomerData) # Check the dimension of the dataset
 summary(CustomerData) #Summarizing data and checking for missing values
