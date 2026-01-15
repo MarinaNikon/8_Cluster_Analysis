@@ -54,7 +54,7 @@ head(CustomerData)
 
 
 # 5. Obtain mean of original variables for each cluster.
-allmean <- aggregate(cbind(age, MonthlyIncome, MinBa, MaxBal, Age.with.Bank)~Cluster,data=CustomerData,FUN=mean)
+allmean <- aggregate(cbind(age, MonthlyIncome, MinBal, MaxBal, Age.with.Bank)~Cluster,data=CustomerData,FUN=mean)
 allmean=allmean %>% map(round,2) %>% as.data.frame() #round off values to two decimal places
 allmean
 
